@@ -1,5 +1,5 @@
 import * as React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 
 import { cn } from "../lib/utils";
 import { Icons } from "./icons";
@@ -33,12 +33,12 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
       )}
     >
       <div className="flex gap-4">
-        <Link href="/" className="items-center space-x-2 flex">
+        <a href="/" className="items-center space-x-2 flex">
           <Icons.logo />
           <span className="hidden font-bold md:inline-block">
             Carousel Generator
           </span>
-        </Link>
+        </a>
         <EditorMenubar />
       </div>
       <div className="hidden lg:block">
@@ -58,7 +58,7 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
           </div>
         </Button>
         <StarOnGithub />
-        <Link
+        <a
           className="block lg:hidden"
           href={"https://github.com/FranciscoMoretti/carousel-generator"}
           target="_blank"
@@ -75,7 +75,7 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
             <Icons.gitHub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </div>
-        </Link>
+        </a>
         {/* // TODO: Re-enable your own keys system  */}
         {/* <BringYourKeysDialog
           triggerButton={

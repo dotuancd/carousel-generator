@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import { StarIcon } from "lucide-react";
 
 import { Icons } from "./icons";
@@ -10,7 +10,7 @@ import { buttonVariants } from "./ui/button";
 export function StarOnGithub() {
   return (
     <div className={cn("mx-2 hidden lg:block")}>
-      <Link
+      <a
         className={cn(
           buttonVariants(),
           "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -35,7 +35,7 @@ export function StarOnGithub() {
           <StarIcon className="h-4 w-4 transition-all duration-300 group-hover:text-[#e3b341]" />
           {/* //TODO: Consider adding star counter with github api */}
         </div>
-      </Link>
+      </a>
     </div>
   );
 }
