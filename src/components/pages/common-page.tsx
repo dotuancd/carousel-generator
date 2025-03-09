@@ -22,7 +22,7 @@ import { AddElement } from "../pages/add-element";
 import { ElementType } from "../../lib/validation/element-type";
 import { ContentImage } from "../elements/content-image";
 import ElementMenubarWrapper from "../element-menubar-wrapper";
-import { useElementSize } from "usehooks-ts";
+import { useResizeObserver as useElementSize } from "usehooks-ts";
 
 export function CommonPage({
   index,
@@ -43,7 +43,15 @@ export function CommonPage({
   const FRAME_PADDING = 40;
   const backgroundImageField = fieldName + ".backgroundImage";
   const [elementsHeight, setElementsHeight] = useState<number | null>(null);
-  const [footerRef, footerDimensions] = useElementSize();
+  const footerRef = React.useRef<HTMLDivElement>(null);
+  const { width = 0, height = 0 } = useElementSize({
+    ref: footerRef,
+    box: "border-box",
+  });
+  // const [footerRef, footerDimensions] = useElementSize({
+  //   ref: footerRef,
+  //   box: "border-box",
+  // });
   const inputRefs = React.useRef<HTMLDivElement[]>([]);
   const offsetHeights = inputRefs.current.map((ref) => ref.offsetHeight);
 
@@ -62,7 +70,7 @@ export function CommonPage({
     // TODO ADD dependencies
   );
   const remainingHeight = elementsHeight
-    ? size.height - FRAME_PADDING * 2 - footerDimensions.height - elementsHeight
+    ? size.height - FRAME_PADDING * 2 - height - elementsHeight
     : 0;
 
   return (
