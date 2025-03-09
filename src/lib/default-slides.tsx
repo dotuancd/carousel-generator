@@ -10,7 +10,7 @@ import {
   DEFAULT_BACKGROUND_IMAGE_INPUT,
   DEFAULT_CONTENT_IMAGE_INPUT,
 } from "./validation/image-schema";
-import { SlideType } from "@/lib/validation/slide-schema";
+import { SlideType } from "./validation/slide-schema";
 
 export const COMMON_PAGE: z.infer<typeof CommonSlideSchema> = {
   elements: [DEFAULT_TITLE, DEFAULT_SUBTITLE, DEFAULT_CONTENT_IMAGE_INPUT],

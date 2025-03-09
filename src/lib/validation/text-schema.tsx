@@ -1,4 +1,4 @@
-import { ElementType } from "@/lib/validation/element-type";
+import { ElementType } from "./element-type";
 import * as z from "zod";
 
 export const FontSizeType = z.enum(["Small", "Medium", "Large"]);

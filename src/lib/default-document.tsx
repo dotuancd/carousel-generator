@@ -1,9 +1,9 @@
 import * as z from "zod";
-import { MultiSlideSchema } from "@/lib/validation/slide-schema";
-import { SlideType } from "@/lib/validation/slide-schema";
+import { MultiSlideSchema } from "./validation/slide-schema";
+import { SlideType } from "./validation/slide-schema";
 
-import { getDefaultSlideOfType } from "@/lib/default-slides";
-import { DEFAULT_IMAGE_INPUT } from "@/lib/validation/image-schema";
+import { getDefaultSlideOfType } from "./default-slides";
+import { DEFAULT_IMAGE_INPUT } from "./validation/image-schema";
 
 const defaultSlideValues: z.infer<typeof MultiSlideSchema> = [
   getDefaultSlideOfType(SlideType.enum.Intro),

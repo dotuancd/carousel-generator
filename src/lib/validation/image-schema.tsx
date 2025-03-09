@@ -1,4 +1,4 @@
-import { ElementType } from "@/lib/validation/element-type";
+import { ElementType } from "./element-type";
 import * as z from "zod";
 
 const ImageDataUrlSchema = z

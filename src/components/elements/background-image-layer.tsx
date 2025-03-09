@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import * as z from "zod";
-import { cn } from "@/lib/utils";
-import { ImageSchema } from "@/lib/validation/image-schema";
+import { cn } from "../../lib/utils";
+import { ImageSchema } from "../../lib/validation/image-schema";
 
 export function BackgroundImageLayer({
   image,

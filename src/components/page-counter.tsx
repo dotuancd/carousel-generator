@@ -1,7 +1,7 @@
 "use client";
 
-import { useFieldArrayValues } from "@/lib/hooks/use-field-array-values";
-import { usePagerContext } from "@/lib/providers/pager-context";
+import { useFieldArrayValues } from "../lib/hooks/use-field-array-values";
+import { usePagerContext } from "../lib/providers/pager-context";
 import { useEffect, useState } from "react";
 
 export function PageCounter() {

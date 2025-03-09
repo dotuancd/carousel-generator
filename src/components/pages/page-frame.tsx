@@ -1,9 +1,9 @@
 import React from "react";
-import { cn } from "@/lib/utils";
-import { usePagerContext } from "@/lib/providers/pager-context";
-import { getParent, getSlideNumber } from "@/lib/field-path";
-import { useSelection } from "@/lib/hooks/use-selection";
-import { useSelectionContext } from "@/lib/providers/selection-context";
+import { cn } from "../../lib/utils";
+import { usePagerContext } from "../../lib/providers/pager-context";
+import { getParent, getSlideNumber } from "../../lib/field-path";
+import { useSelection } from "../../lib/hooks/use-selection";
+import { useSelectionContext } from "../../lib/providers/selection-context";
 
 export function PageFrame({
   children,

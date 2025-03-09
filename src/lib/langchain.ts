@@ -5,13 +5,13 @@ import { zodToJsonSchema } from "zod-to-json-schema";
 import {
   MultiSlideSchema,
   UnstyledMultiSlideSchema,
-} from "@/lib/validation/slide-schema"; // TODO: Keep only the slides for some prompt
-import { UnstyledDocumentSchema } from "@/lib/validation/document-schema";
+} from "./validation/slide-schema"; // TODO: Keep only the slides for some prompt
+import { UnstyledDocumentSchema } from "./validation/document-schema";
 import {
   UnstyledTitleSchema,
   UnstyledDescriptionSchema,
   UnstyledSubtitleSchema,
-} from "@/lib/validation/text-schema";
+} from "./validation/text-schema";
 
 const carouselFunctionSchema = {
   name: "carouselCreator",

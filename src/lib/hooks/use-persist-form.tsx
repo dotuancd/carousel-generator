@@ -1,4 +1,4 @@
-import { DocumentSchema } from "@/lib/validation/document-schema";
+import { DocumentSchema } from "../validation/document-schema";
 import { useCallback, useEffect } from "react";
 import { ZodType, z } from "zod";
 

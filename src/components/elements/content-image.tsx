@@ -1,20 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import * as z from "zod";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import {
   ObjectFitType,
   ImageSchema,
   ContentImageSchema,
-} from "@/lib/validation/image-schema";
-import { useSelectionContext } from "@/lib/providers/selection-context";
-import { getSlideNumber } from "@/lib/field-path";
-import { usePagerContext } from "@/lib/providers/pager-context";
+} from "../../lib/validation/image-schema";
+import { useSelectionContext } from "../../lib/providers/selection-context";
+import { getSlideNumber } from "../../lib/field-path";
+import { usePagerContext } from "../../lib/providers/pager-context";
 import { useFormContext } from "react-hook-form";
 import {
   DocumentFormReturn,
   ElementFieldPath,
-} from "@/lib/document-form-types";
+} from "../../lib/document-form-types";
 
 export function ContentImage({
   fieldName,

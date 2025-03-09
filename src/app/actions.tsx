@@ -1,7 +1,7 @@
 "use server";
-import { messageRateLimit } from "@/lib/rate-limit";
+import { messageRateLimit } from "../lib/rate-limit";
 
-import { generateCarouselSlides } from "@/lib/langchain";
+import { generateCarouselSlides } from "../lib/langchain";
 import { headers } from "next/headers";
 
 export async function generateCarouselSlidesAction(userPrompt: string) {

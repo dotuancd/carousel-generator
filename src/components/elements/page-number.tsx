@@ -1,8 +1,8 @@
 import React from "react";
-import { ConfigSchema } from "@/lib/validation/document-schema";
+import { ConfigSchema } from "../../lib/validation/document-schema";
 import { z } from "zod";
-import { cn } from "@/lib/utils";
-import { fontIdToClassName } from "@/lib/fonts-map";
+import { cn } from "../../lib/utils";
+import { fontIdToClassName } from "../../lib/fonts-map";
 
 export function PageNumber({
   config,
