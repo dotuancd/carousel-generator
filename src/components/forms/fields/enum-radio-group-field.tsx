@@ -1,22 +1,21 @@
-import { Type } from "lucide-react";
+
 import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../../ui/form";
 import {
   DocumentFormReturn,
   ImageStyleObjectFitFieldPath,
   TextStyleAlignFieldPath,
   TextStyleFontSizeFieldPath,
-} from "@/lib/document-form-types";
+} from "../../../lib/document-form-types";
 import { RadioGroup } from "@radix-ui/react-radio-group";
-import { CustomIndicatorRadioGroupItem } from "@/components/custom-indicator-radio-group-item";
-import { cn } from "@/lib/utils";
+import { CustomIndicatorRadioGroupItem } from "../../custom-indicator-radio-group-item";
+import { cn } from "../../../lib/utils";
 import React from "react";
-import { TypographyFieldName } from "@/components/typography";
+import { TypographyFieldName } from "../../typography";
 
 export function EnumRadioGroupField<T extends string | number | symbol>({
   fieldName,

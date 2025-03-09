@@ -8,7 +8,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../ui/form";
 
 import {
   Select,
@@ -16,9 +16,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { fontsMap } from "@/lib/fonts-map";
-import { DocumentFormReturn } from "@/lib/document-form-types";
+} from "../ui/select";
+import { fontsMap } from "../../lib/fonts-map";
+import { DocumentFormReturn } from "../../lib/document-form-types";
 
 export function FontsForm({}: {}) {
   const form: DocumentFormReturn = useFormContext(); // retrieve those props

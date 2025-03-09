@@ -4,12 +4,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Slider } from "@/components/ui/slider";
+} from "../../ui/form";
+import { Slider } from "../../ui/slider";
 import {
   DocumentFormReturn,
   ImageStyleOpacityFieldPath,
-} from "@/lib/document-form-types";
+} from "../../../lib/document-form-types";
 import { useEffect, useState } from "react";
 
 export function OpacityFormField({

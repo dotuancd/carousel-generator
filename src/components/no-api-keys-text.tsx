@@ -1,7 +1,7 @@
-import { BringYourKeysDialog } from "@/components/api-keys-dialog";
-import { TypographyExternalLink } from "@/components/typography";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { BringYourKeysDialog } from "./api-keys-dialog";
+import { TypographyExternalLink } from "./typography";
+import { Button } from "./ui/button";
+import { cn } from "../lib/utils";
 import { Settings } from "lucide-react";
 
 export function NoApiKeysText() {

@@ -1,6 +1,6 @@
-import { useSelectionContext } from "@/lib/providers/selection-context";
+import { useSelectionContext } from "../lib/providers/selection-context";
 import { getStyleSibling } from "../lib/field-path";
-import { EnumRadioGroupField } from "@/components/forms/fields/enum-radio-group-field";
+import { EnumRadioGroupField } from "./forms/fields/enum-radio-group-field";
 import {
   DocumentFormReturn,
   ElementFieldPath,
@@ -11,8 +11,8 @@ import {
   StyleFieldPath,
   TextStyleAlignFieldPath,
   TextStyleFontSizeFieldPath,
-} from "@/lib/document-form-types";
-import { cn } from "@/lib/utils";
+} from "../lib/document-form-types";
+import { cn } from "../lib/utils";
 import React from "react";
 import {
   AlignCenter,
@@ -22,18 +22,18 @@ import {
   Minimize2,
   Type,
 } from "lucide-react";
-import { FontSizeType, TextALignType } from "@/lib/validation/text-schema";
-import { OpacityFormField } from "@/components/forms/fields/opacity-form-field";
-import { ImageSourceFormField } from "@/components/forms/fields/image-source-form-field";
-import { ObjectFitType } from "@/lib/validation/image-schema";
-import { ElementType } from "@/lib/validation/element-type";
+import { FontSizeType, TextALignType } from "../lib/validation/text-schema";
+import { OpacityFormField } from "./forms/fields/opacity-form-field";
+import { ImageSourceFormField } from "./forms/fields/image-source-form-field";
+import { ObjectFitType } from "../lib/validation/image-schema";
+import { ElementType } from "../lib/validation/element-type";
 import {
   TypographyFieldName,
   TypographyH3,
   TypographyH4,
   TypographyLarge,
-} from "@/components/typography";
-import { Separator } from "@/components/ui/separator";
+} from "./typography";
+import { Separator } from "./ui/separator";
 
 const fontSizeMap: Record<FontSizeType, React.ReactElement> = {
   [FontSizeType.enum.Small]: <Type className="h-2 w-2" />,

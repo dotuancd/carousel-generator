@@ -6,17 +6,12 @@ import {
   UseFormWatch,
 } from "react-hook-form";
 import * as z from "zod";
-import { DocumentSchema } from "@/lib/validation/document-schema";
+import { DocumentSchema } from "./validation/document-schema";
 import {
   CommonSlideSchema,
   ElementSchema,
-} from "@/lib/validation/slide-schema";
-import {
-  DescriptionSchema,
-  TextStyleSchema,
-} from "@/lib/validation/text-schema";
-import { CommonPage } from "@/components/pages/common-page";
-import { ContentImageSchema } from "@/lib/validation/image-schema";
+} from "./validation/slide-schema";
+import { TextStyleSchema } from "./validation/text-schema";
 
 export type DocumentFormReturn = UseFormReturn<
   z.infer<typeof DocumentSchema>,

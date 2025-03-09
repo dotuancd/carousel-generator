@@ -1,9 +1,7 @@
-import { TypographyH3 } from "@/components/typography";
+import { TypographyH3 } from "./typography";
 import { Sparkles } from "lucide-react";
 import { NoApiKeysText } from "./no-api-keys-text";
-import { useKeysContext } from "@/lib/providers/keys-context";
-import { AIInputForm } from "@/components/ai-input-form";
-import { AITextAreaForm } from "@/components/ai-textarea-form";
+import { AIInputForm } from "./ai-input-form";
 
 export function AIPanel() {
   // const { apiKey } = useKeysContext();
@@ -16,8 +14,6 @@ export function AIPanel() {
       {apiKey ? (
         <>
           <AIInputForm />
-          {/* // TODO: Improve article to carousel conversion */}
-          {/* <AITextAreaForm /> */}
         </>
       ) : (
         <NoApiKeysText />

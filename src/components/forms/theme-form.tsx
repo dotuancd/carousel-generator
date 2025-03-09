@@ -1,5 +1,4 @@
 import { useFormContext } from "react-hook-form";
-import * as z from "zod";
 
 import {
   Form,
@@ -8,14 +7,14 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from "../ui/form";
+import { Input } from "../ui/input";
 
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import { pallettes } from "@/lib/pallettes";
+import { RadioGroup } from "../ui/radio-group";
+import { pallettes } from "../../lib/pallettes";
 import { CustomIndicatorRadioGroupItem } from "../custom-indicator-radio-group-item";
 import { ColorThemeDisplay } from "../color-theme-display";
-import { DocumentFormReturn } from "@/lib/document-form-types";
+import { DocumentFormReturn } from "../../lib/document-form-types";
 import { Checkbox } from "../ui/checkbox";
 
 function PalletteSelector({ form }: { form: DocumentFormReturn }) {

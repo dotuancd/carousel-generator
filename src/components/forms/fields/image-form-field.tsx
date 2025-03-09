@@ -2,9 +2,9 @@ import {
   DocumentFormReturn,
   ImageFieldPath,
   ImageStyleOpacityFieldPath,
-} from "@/lib/document-form-types";
-import { ImageSourceFormField } from "@/components/forms/fields/image-source-form-field";
-import { OpacityFormField } from "@/components/forms/fields/opacity-form-field";
+} from "../../../lib/document-form-types";
+import { ImageSourceFormField } from "./image-source-form-field";
+import { OpacityFormField } from "./opacity-form-field";
 
 export function ImageFormField({
   fieldName,

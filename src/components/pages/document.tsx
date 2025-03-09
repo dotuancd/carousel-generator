@@ -1,22 +1,22 @@
 "use client";
 import * as z from "zod";
 import React, { useEffect } from "react";
-import { DocumentSchema } from "@/lib/validation/document-schema";
-import { SIZE } from "@/lib/page-size";
-import { usePagerContext } from "@/lib/providers/pager-context";
-import { cn } from "@/lib/utils";
-import { NewPage } from "@/components/pages/new-page";
+import { DocumentSchema } from "../../lib/validation/document-schema";
+import { SIZE } from "../../lib/page-size";
+import { usePagerContext } from "../../lib/providers/pager-context";
+import { cn } from "../../lib/utils";
+import { NewPage } from "../pages/new-page";
 import {
   SlideFieldPath,
   SlidesFieldArrayReturn,
-} from "@/lib/document-form-types";
-import { SlideType } from "@/lib/validation/slide-schema";
+} from "../../lib/document-form-types";
+import { SlideType } from "../../lib/validation/slide-schema";
 
-import { getDefaultSlideOfType } from "@/lib/default-slides";
-import { useFieldArrayValues } from "@/lib/hooks/use-field-array-values";
-import { useRefContext } from "@/lib/providers/reference-context";
-import { CommonPage } from "@/components/pages/common-page";
-import SlideMenubarWrapper from "@/components/slide-menubar-wrapper";
+import { getDefaultSlideOfType } from "../../lib/default-slides";
+import { useFieldArrayValues } from "../../lib/hooks/use-field-array-values";
+import { useRefContext } from "../../lib/providers/reference-context";
+import { CommonPage } from "../pages/common-page";
+import SlideMenubarWrapper from "../slide-menubar-wrapper";
 
 import {
   Carousel,
@@ -25,7 +25,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "../ui/carousel";
 
 export function Document({
   document,

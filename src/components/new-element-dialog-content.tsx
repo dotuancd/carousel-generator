@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Dialog,
   DialogContent,
@@ -7,19 +7,19 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "./ui/dialog";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
 import {
   DocumentFormReturn,
   ElementArrayFieldPath,
-} from "@/lib/document-form-types";
-import { DEFAULT_CONTENT_IMAGE_INPUT } from "@/lib/validation/image-schema";
+} from "../lib/document-form-types";
+import { DEFAULT_CONTENT_IMAGE_INPUT } from "../lib/validation/image-schema";
 import {
   DescriptionSchema,
   SubtitleSchema,
   TitleSchema,
-} from "@/lib/validation/text-schema";
+} from "../lib/validation/text-schema";
 import { Plus, X } from "lucide-react";
 import { useFieldArray } from "react-hook-form";
 

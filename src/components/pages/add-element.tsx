@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "../ui/button";
+import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Plus } from "lucide-react";
-import { getSlideNumber } from "@/lib/field-path";
+import { getSlideNumber } from "../../lib/field-path";
 import { useFormContext } from "react-hook-form";
-import { NewElementDialogContent } from "@/components/new-element-dialog-content";
+import { NewElementDialogContent } from "../new-element-dialog-content";
 import {
   DocumentFormReturn,
   ElementArrayFieldPath,
-} from "@/lib/document-form-types";
+} from "../../lib/document-form-types";
 
 export function AddElement({
   className,

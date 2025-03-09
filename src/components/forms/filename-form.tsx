@@ -7,11 +7,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { cn } from "@/lib/utils";
-import { Textarea } from "@/components/ui/textarea";
-import { DocumentFormReturn } from "@/lib/document-form-types";
+} from "../ui/form";
+import { Input } from "../ui/input";
+import { cn } from "../../lib/utils";
+import { Textarea } from "../ui/textarea";
+import { DocumentFormReturn } from "../../lib/document-form-types";
 
 export function FilenameForm({ className = "" }: { className?: string }) {
   const form: DocumentFormReturn = useFormContext(); // retrieve those props

@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import { fontIdToClassName } from "@/lib/fonts-map";
-import { textStyleToClasses } from "@/lib/text-style-to-classes";
+import { cn } from "../../lib/utils";
+import { fontIdToClassName } from "../../lib/fonts-map";
+import { textStyleToClasses } from "../../lib/text-style-to-classes";
 import { useFormContext } from "react-hook-form";
 import {
   DocumentFormReturn,
@@ -8,8 +8,8 @@ import {
   TextFieldStyle,
   StyleFieldPath,
   TextTextFieldPath,
-} from "@/lib/document-form-types";
-import { TextAreaFormField } from "@/components/forms/fields/text-area-form-field";
+} from "../../lib/document-form-types";
+import { TextAreaFormField } from "../forms/fields/text-area-form-field";
 
 export function Subtitle({
   fieldName,

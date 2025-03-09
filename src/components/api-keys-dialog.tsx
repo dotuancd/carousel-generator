@@ -12,7 +12,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
+} from "./ui/drawer";
 import {
   Form,
   FormControl,
@@ -21,9 +21,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { toast } from "@/components/ui/use-toast";
-import { Button } from "@/components/ui/button";
+} from "./ui/form";
+import { toast } from "./ui/use-toast";
+import { Button } from "./ui/button";
 import {
   Dialog,
   DialogContent,
@@ -32,13 +32,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { useKeys } from "@/lib/hooks/use-keys";
+} from "./ui/dialog";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
 import React, { ReducerAction, useEffect } from "react";
-import { useKeysContext } from "@/lib/providers/keys-context";
-import { useMediaQuery } from "@/lib/hooks/use-media-query";
+import { useKeysContext } from "../lib/providers/keys-context";
+import { useMediaQuery } from "../lib/hooks/use-media-query";
 
 const FormSchema = z.object({
   key: z.string().min(2, {

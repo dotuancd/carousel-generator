@@ -1,16 +1,16 @@
 import React from "react";
-import { cn } from "@/lib/utils";
-import { fontIdToClassName } from "@/lib/fonts-map";
-import { textStyleToClasses } from "@/lib/text-style-to-classes";
+import { cn } from "../../lib/utils";
+import { fontIdToClassName } from "../../lib/fonts-map";
+import { textStyleToClasses } from "../../lib/text-style-to-classes";
 import { useFormContext } from "react-hook-form";
-import { TextAreaFormField } from "@/components/forms/fields/text-area-form-field";
+import { TextAreaFormField } from "../forms/fields/text-area-form-field";
 import {
   DocumentFormReturn,
   TextFieldPath,
   TextFieldStyle,
   StyleFieldPath,
   TextTextFieldPath,
-} from "@/lib/document-form-types";
+} from "../../lib/document-form-types";
 
 export function Description({
   fieldName,

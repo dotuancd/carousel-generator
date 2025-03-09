@@ -4,25 +4,23 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFormContext } from "react-hook-form";
 import * as z from "zod";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { toast } from "@/components/ui/use-toast";
+} from "./ui/form";
+import { toast } from "./ui/use-toast";
 import { Sparkles } from "lucide-react";
-import { generateCarouselSlides } from "@/lib/langchain";
-import { DocumentFormReturn } from "@/lib/document-form-types";
+import { DocumentFormReturn } from "../lib/document-form-types";
 import { useState } from "react";
-import { LoadingSpinner } from "@/components/loading-spinner";
-import { Textarea } from "@/components/ui/textarea";
-import { useKeysContext } from "@/lib/providers/keys-context";
-import { generateCarouselSlidesAction } from "@/app/actions";
+import { LoadingSpinner } from "./loading-spinner";
+import { Textarea } from "./ui/textarea";
+import { useKeysContext } from "../lib/providers/keys-context";
+import { generateCarouselSlidesAction } from "../app/actions";
 
 const FormSchema = z.object({
   prompt: z.string().min(2, {

@@ -8,11 +8,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from "../ui/form";
+import { Input } from "../ui/input";
 
-import { DocumentFormReturn } from "@/lib/document-form-types";
-import { ImageFormField } from "@/components/forms/fields/image-form-field";
+import { DocumentFormReturn } from "../../lib/document-form-types";
+import { ImageFormField } from "../forms/fields/image-form-field";
 
 export function BrandForm({}: {}) {
   const form: DocumentFormReturn = useFormContext(); // retrieve those props

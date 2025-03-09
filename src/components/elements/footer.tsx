@@ -1,9 +1,9 @@
 import React from "react";
 import * as z from "zod";
-import { ConfigSchema, DocumentSchema } from "@/lib/validation/document-schema";
-import { Signature } from "@/components/elements/signature";
-import { PageNumber } from "@/components/elements/page-number";
-import { cn } from "@/lib/utils";
+import { ConfigSchema, DocumentSchema } from "../../lib/validation/document-schema";
+import { Signature } from "./signature";
+import { PageNumber } from "./page-number";
+import { cn } from "../../lib/utils";
 
 const Footer = React.forwardRef<
   HTMLDivElement,

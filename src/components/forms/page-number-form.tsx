@@ -1,5 +1,4 @@
 import { useFormContext } from "react-hook-form";
-import * as z from "zod";
 
 import {
   Form,
@@ -7,11 +6,10 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+} from "../ui/form";
 
-import { DocumentFormReturn } from "@/lib/document-form-types";
-import { Checkbox } from "@/components/ui/checkbox";
+import { DocumentFormReturn } from "../../lib/document-form-types";
+import { Checkbox } from "../ui/checkbox";
 
 export function PageNumberForm({}: {}) {
   const form: DocumentFormReturn = useFormContext(); // retrieve those props

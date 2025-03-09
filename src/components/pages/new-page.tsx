@@ -1,10 +1,10 @@
-import { SlideType } from "@/lib/validation/slide-schema";
+import { SlideType } from "../../lib/validation/slide-schema";
 
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "../ui/button";
+import { Dialog, DialogTrigger } from "../ui/dialog";
 import { Plus } from "lucide-react";
-import { NewSlideDialogContent } from "@/components/new-page-dialog-content";
-import { cn } from "@/lib/utils";
+import { NewSlideDialogContent } from "../new-page-dialog-content";
+import { cn } from "../../lib/utils";
 
 export function NewPage({
   size,

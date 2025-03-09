@@ -1,11 +1,8 @@
-import { DocumentFormReturn } from "@/lib/document-form-types";
+import { DocumentFormReturn } from "../document-form-types";
 import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
-import { Input } from "@/components/ui/input";
-import { ConfigSchema } from "@/lib/validation/document-schema";
-import { MultiSlideSchema } from "@/lib/validation/slide-schema";
-import merge from "deepmerge";
-import { getDefaultSlideOfType } from "@/lib/default-slides";
+import { ConfigSchema } from "../validation/document-schema";
+import { MultiSlideSchema } from "../validation/slide-schema";
 
 export function useFieldsFileImporter(field: "config" | "slides") {
   const { setValue }: DocumentFormReturn = useFormContext(); // retrieve those props

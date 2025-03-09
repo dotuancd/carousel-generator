@@ -11,9 +11,9 @@ import {
   Montserrat,
 } from "next/font/google";
 import { GeistSans, GeistMono } from "geist/font";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "../components/ui/toaster";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
-import { SiteFooter } from "@/components/site-footer";
+import { SiteFooter } from "../components/site-footer";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],

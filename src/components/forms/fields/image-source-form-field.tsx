@@ -4,16 +4,16 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { convertFileToDataUrl } from "@/lib/convert-file";
+} from "../../ui/form";
+import { Input } from "../../ui/input";
+import { convertFileToDataUrl } from "../../../lib/convert-file";
 import {
   DocumentFormReturn,
   ImageSourceFieldPath,
-} from "@/lib/document-form-types";
+} from "../../../lib/document-form-types";
 import imageCompression from "browser-image-compression";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../ui/tabs";
-import { ImageInputType } from "@/lib/validation/image-schema";
+import { ImageInputType } from "../../../lib/validation/image-schema";
 import { useEffect, useState } from "react";
 
 export const MAX_IMAGE_SIZE_MB = 0.5; // Set your maximum image size limit in megabytes

@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import * as z from "zod";
-import { ConfigSchema } from "@/lib/validation/document-schema";
+import { ConfigSchema } from "../../lib/validation/document-schema";
 import Footer from "../elements/footer";
-import { cn } from "@/lib/utils";
-import { CommonSlideSchema } from "@/lib/validation/slide-schema";
-import { BackgroundLayer } from "@/components/elements/background-layer";
-import { BackgroundImageLayer } from "@/components/elements/background-image-layer";
-import { PageBase } from "@/components/pages/page-base";
-import { Title } from "@/components/elements/title";
-import { Subtitle } from "@/components/elements/subtitle";
-import { Description } from "@/components/elements/description";
+import { cn } from "../../lib/utils";
+import { CommonSlideSchema } from "../../lib/validation/slide-schema";
+import { BackgroundLayer } from "../elements/background-layer";
+import { BackgroundImageLayer } from "../elements/background-image-layer";
+import { PageBase } from "../pages/page-base";
+import { Title } from "../elements/title";
+import { Subtitle } from "../elements/subtitle";
+import { Description } from "../elements/description";
 import {
   ElementArrayFieldPath,
   ElementFieldPath,
   SlideFieldPath,
   TextFieldPath,
-} from "@/lib/document-form-types";
-import { PageFrame } from "@/components/pages/page-frame";
-import { PageLayout } from "@/components/pages/page-layout";
-import { AddElement } from "@/components/pages/add-element";
-import { ElementType } from "@/lib/validation/element-type";
-import { ContentImage } from "@/components/elements/content-image";
-import ElementMenubarWrapper from "@/components/element-menubar-wrapper";
+} from "../../lib/document-form-types";
+import { PageFrame } from "../pages/page-frame";
+import { PageLayout } from "../pages/page-layout";
+import { AddElement } from "../pages/add-element";
+import { ElementType } from "../../lib/validation/element-type";
+import { ContentImage } from "../elements/content-image";
+import ElementMenubarWrapper from "../element-menubar-wrapper";
 import { useElementSize } from "usehooks-ts";
 
 export function CommonPage({

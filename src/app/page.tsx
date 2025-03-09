@@ -1,7 +1,7 @@
 "use client";
 
-import Editor from "@/components/editor";
-import { DocumentProvider } from "@/lib/providers/document-provider";
+import Editor from "../components/editor";
+import { DocumentProvider } from "../lib/providers/document-provider";
 
 export default function Home() {
   return (

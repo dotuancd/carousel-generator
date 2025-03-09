@@ -1,20 +1,19 @@
-import { AutoTextarea } from "@/components/ui/auto-text-area";
+import { AutoTextarea } from "../../ui/auto-text-area";
 import {
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../../ui/form";
 import {
   DocumentFormReturn,
   TextTextFieldPath,
-} from "@/lib/document-form-types";
-import { getParent, getSlideNumber } from "@/lib/field-path";
-import { usePagerContext } from "@/lib/providers/pager-context";
-import { useSelectionContext } from "@/lib/providers/selection-context";
+} from "../../../lib/document-form-types";
+import { getParent, getSlideNumber } from "../../../lib/field-path";
+import { usePagerContext } from "../../../lib/providers/pager-context";
+import { useSelectionContext } from "../../../lib/providers/selection-context";
 import { CSSProperties } from "react";
-import { set } from "zod";
 
 export function TextAreaFormField({
   form,
