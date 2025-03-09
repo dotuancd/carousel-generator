@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import {
   Inter,
   PT_Serif,
@@ -9,10 +9,10 @@ import {
   Ultra,
   Archivo_Black,
   Montserrat,
-} from "next/font/google";
+} from "@next/font/google";
 import { GeistSans, GeistMono } from "geist/font";
 import { Toaster } from "../components/ui/toaster";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { DM_Sans, DM_Serif_Display } from "@next/font/google";
 import { SiteFooter } from "../components/site-footer";
 
 const dm_sans = DM_Sans({
@@ -85,10 +85,10 @@ const syne = Syne({
   weight: ["500", "700"],
 });
 
-export const metadata: Metadata = {
-  ...(process.env.NEXT_PUBLIC_APP_URL && {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL),
-  }),
+export const metadata = {
+  // ...(process.env.NEXT_PUBLIC_APP_URL && {
+  //   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL),
+  // }),
   title: "Carousel Generator",
   description: "An open source carousel maker for LinkedIn",
 };

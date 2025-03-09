@@ -11,6 +11,9 @@ importers:
       '@hookform/resolvers':
         specifier: ^3.10.0
         version: 3.10.0(react-hook-form@7.54.2(react@18.2.0))
+      '@next/font':
+        specifier: ^14.2.15
+        version: 14.2.15(next@14.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       '@radix-ui/react-checkbox':
         specifier: ^1.1.4
         version: 1.1.4(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -128,9 +131,6 @@ importers:
       lucide-react:
         specifier: ^0.268.0
         version: 0.268.0(react@18.2.0)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       postcss:
         specifier: 8.4.28
         version: 8.4.28
@@ -445,6 +445,11 @@ packages:
 
   '@next/eslint-plugin-next@14.2.24':
     resolution: {integrity: sha512-FDL3qs+5DML0AJz56DCVr+KnFYivxeAX73En8QbPw9GjJZ6zbfvqDy+HrarHFzbsIASn7y8y5ySJ/lllSruNVQ==}
+
+  '@next/font@14.2.15':
+    resolution: {integrity: sha512-QopYhBmCDDrNDynbi+ZD1hDZXmQXVFo7TmAFp4DQgO/kogz1OLbQ92hPigJbj572eZ3GaaVxNIyYVn3/eAsehg==}
+    peerDependencies:
+      next: '*'
 
   '@next/swc-darwin-arm64@14.0.4':
     resolution: {integrity: sha512-mF05E/5uPthWzyYDyptcwHptucf/jj09i2SXBPwNzbgBNc+XnwzrL0U6BmPjQeOL+FiB+iG1gwBeq7mlDjSRPg==}
@@ -3876,6 +3881,10 @@ snapshots:
   '@next/eslint-plugin-next@14.2.24':
     dependencies:
       glob: 10.3.10
+
+  '@next/font@14.2.15(next@14.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+    dependencies:
+      next: 14.0.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
 
   '@next/swc-darwin-arm64@14.0.4':
     optional: true
