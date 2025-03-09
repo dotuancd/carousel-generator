@@ -4,8 +4,8 @@ import Link from "next/link";
 import { StarIcon } from "lucide-react";
 
 import { Icons } from "./icons";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
+import { cn } from "../lib/utils";
+import { buttonVariants } from "./ui/button";
 
 export function StarOnGithub() {
   return (

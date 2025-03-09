@@ -1,20 +1,18 @@
 "use client";
 
-import Link from "next/link";
 // import { SidebarNavItem } from "types/nav";
 
-import { cn } from "@/lib/utils";
-import { BrandForm } from "@/components/forms/brand-form";
-import { ThemeForm } from "@/components/forms/theme-form";
+import { cn } from "../lib/utils";
+import { BrandForm } from "./forms/brand-form";
+import { ThemeForm } from "./forms/theme-form";
 import {
   VerticalTabs,
   VerticalTabsContent,
   VerticalTabsList,
   VerticalTabsTrigger,
-} from "@/components/ui/vertical-tabs";
-import { usePagerContext } from "@/lib/providers/pager-context";
-import { Separator } from "@/components/ui/separator";
-import { FontsForm } from "@/components/forms/fonts-form";
+} from "./ui/vertical-tabs";
+import { Separator } from "./ui/separator";
+import { FontsForm } from "./forms/fonts-form";
 import { PageNumberForm } from "./forms/page-number-form";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import {
@@ -28,16 +26,13 @@ import {
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Drawer } from "vaul";
-import { DrawerContent, DrawerTrigger } from "@/components/drawer";
-import { ReactNode, useEffect, useState } from "react";
+import { DrawerContent, DrawerTrigger } from "./drawer";
+import { ReactNode, useState } from "react";
 import { buttonVariants } from "./ui/button";
-import { ScrollBar } from "./ui/scroll-area";
-import { useSelectionContext } from "@/lib/providers/selection-context";
-import { useFieldsFileImporter } from "@/lib/hooks/use-fields-file-importer";
-import { set } from "zod";
-import { StyleMenu } from "@/components/style-menu";
+import { useSelectionContext } from "../lib/providers/selection-context";
+import { StyleMenu } from "./style-menu";
 import { useFormContext } from "react-hook-form";
-import { DocumentFormReturn } from "@/lib/document-form-types";
+import { DocumentFormReturn } from "../lib/document-form-types";
 
 type TabInfo = {
   name: string;

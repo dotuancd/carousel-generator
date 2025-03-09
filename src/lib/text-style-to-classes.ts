@@ -3,7 +3,7 @@ import {
   FontSizeType,
   TextALignType,
   TextStyleSchema,
-} from "@/lib/validation/text-schema";
+} from "./validation/text-schema";
 
 export function textStyleToClasses({
   style,

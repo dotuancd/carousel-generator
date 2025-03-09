@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Colors } from "@/lib/pallettes";
+import { Colors } from "../lib/pallettes";
 
 export function ColorThemeDisplay({ colors }: { colors: Colors }) {
   return (

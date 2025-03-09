@@ -1,6 +1,6 @@
-import { generateForegroundColorFrom } from "@/lib/theme-utils";
-import themes, { Theme } from "@/lib/themes";
-import { ColorSchema } from "@/lib/validation/theme-schema";
+import { generateForegroundColorFrom } from "./theme-utils";
+import themes, { Theme } from "./themes";
+import { ColorSchema } from "./validation/theme-schema";
 import { formatHex, parse } from "culori";
 import * as z from "zod";
 

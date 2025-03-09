@@ -30,7 +30,7 @@ import {
   LucideIcon,
 } from "lucide-react";
 
-import { GithubIcon } from "@/components/github-icon";
+import { GithubIcon } from "./github-icon";
 
 export type Icon = LucideIcon;
 

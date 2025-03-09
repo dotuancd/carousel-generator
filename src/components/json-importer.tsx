@@ -1,9 +1,5 @@
-import { DocumentFormReturn } from "@/lib/document-form-types";
-import { useEffect, useState } from "react";
-import { useFormContext } from "react-hook-form";
-import { Input } from "./ui/input";
-import { ConfigSchema } from "@/lib/validation/document-schema";
-import { MultiSlideSchema } from "@/lib/validation/slide-schema";
+
+import { useState } from "react";
 import FileInputForm from "./forms/file-input-form";
 import {
   Dialog,
@@ -12,7 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import { useFieldsFileImporter } from "@/lib/hooks/use-fields-file-importer";
+import { useFieldsFileImporter } from "../lib/hooks/use-fields-file-importer";
 
 export function JsonImporter({
   fields,

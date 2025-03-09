@@ -1,16 +1,14 @@
 import * as React from "react";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
 
-import { cn } from "@/lib/utils";
-import { Icons } from "@/components/icons";
+import { cn } from "../lib/utils";
+import { Icons } from "./icons";
 import { Button, buttonVariants } from "./ui/button";
 import { EditorMenubar } from "./editor-menubar";
 import { Download, Loader2Icon, Settings } from "lucide-react";
 import Pager from "./pager";
 import { FilenameForm } from "./forms/filename-form";
-import { BringYourKeysDialog } from "@/components/api-keys-dialog";
-import { StarOnGithub } from "@/components/star-on-github";
+import { StarOnGithub } from "./star-on-github";
 
 export type NavItem = {
   title: string;

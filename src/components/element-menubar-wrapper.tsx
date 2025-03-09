@@ -1,10 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { DocumentSchema } from "@/lib/validation/document-schema";
+import { Button } from "./ui/button";
 import { useFormContext } from "react-hook-form";
 import {
-  CornerUpRight,
-  CornerUpLeft,
   Copy,
   Trash,
   ChevronUp,
@@ -13,13 +10,12 @@ import {
 import {
   DocumentFormReturn,
   ElementFieldPath,
-  SlidesFieldArrayReturn,
-} from "@/lib/document-form-types";
-import { useFieldArrayValues } from "@/lib/hooks/use-field-array-values";
-import { cn } from "@/lib/utils";
+} from "../lib/document-form-types";
+import { useFieldArrayValues } from "../lib/hooks/use-field-array-values";
+import { cn } from "../lib/utils";
 import { useFieldArray } from "react-hook-form";
-import { getParent, getElementNumber } from "@/lib/field-path";
-import { useSelectionContext } from "@/lib/providers/selection-context";
+import { getParent, getElementNumber } from "../lib/field-path";
+import { useSelectionContext } from "../lib/providers/selection-context";
 import React from "react";
 
 function ElementMenubar({

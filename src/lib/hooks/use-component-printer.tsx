@@ -1,9 +1,9 @@
 import React from "react";
 import { useReactToPrint } from "react-to-print";
-import { SIZE } from "@/lib/page-size";
-import { useFieldArrayValues } from "@/lib/hooks/use-field-array-values";
+import { SIZE } from "../page-size";
+import { useFieldArrayValues } from "./use-field-array-values";
 import { useFormContext } from "react-hook-form";
-import { DocumentFormReturn } from "@/lib/document-form-types";
+import { DocumentFormReturn } from "../document-form-types";
 import { toCanvas } from "html-to-image";
 import { Options as HtmlToImageOptions } from "html-to-image/lib/types";
 import { jsPDF, jsPDFOptions } from "jspdf";

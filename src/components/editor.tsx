@@ -1,11 +1,11 @@
 "use client";
 
-import { SidebarPanel } from "@/components/settings-panel";
-import { SlidesEditor } from "@/components/slides-editor";
+import { SidebarPanel } from "./settings-panel";
+import { SlidesEditor } from "./slides-editor";
 import React from "react";
-import { useComponentPrinter } from "@/lib/hooks/use-component-printer";
+import { useComponentPrinter } from "../lib/hooks/use-component-printer";
 
-import { RefProvider } from "@/lib/providers/reference-context";
+import { RefProvider } from "../lib/providers/reference-context";
 import { MainNav } from "./main-nav";
 
 export default function Editor({}: {}) {

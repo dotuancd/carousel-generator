@@ -1,11 +1,8 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { usePagerContext } from "@/lib/providers/pager-context";
-import { DocumentSchema } from "@/lib/validation/document-schema";
+import { Button } from "./ui/button";
+import { usePagerContext } from "../lib/providers/pager-context";
 import { useFormContext } from "react-hook-form";
 import {
-  CornerUpRight,
-  CornerUpLeft,
   Copy,
   Trash,
   ChevronLeft,
@@ -14,10 +11,10 @@ import {
 import {
   DocumentFormReturn,
   SlidesFieldArrayReturn,
-} from "@/lib/document-form-types";
-import { useFieldArrayValues } from "@/lib/hooks/use-field-array-values";
-import { cn } from "@/lib/utils";
-import { getSlideNumber } from "@/lib/field-path";
+} from "../lib/document-form-types";
+import { useFieldArrayValues } from "../lib/hooks/use-field-array-values";
+import { cn } from "../lib/utils";
+import { getSlideNumber } from "../lib/field-path";
 
 export default function SlideMenubar({
   slidesFieldArray,

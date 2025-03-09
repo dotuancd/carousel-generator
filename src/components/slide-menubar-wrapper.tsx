@@ -1,12 +1,11 @@
 "use client";
 import {
-  DocumentFormReturn,
   SlidesFieldArrayReturn,
-} from "@/lib/document-form-types";
-import { cn } from "@/lib/utils";
+} from "../lib/document-form-types";
+import { cn } from "../lib/utils";
 
-import { useSelectionContext } from "@/lib/providers/selection-context";
-import SlideMenubar from "@/components/slide-menubar";
+import { useSelectionContext } from "../lib/providers/selection-context";
+import SlideMenubar from "./slide-menubar";
 
 export default function SlideMenubarWrapper({
   // slidesFieldArray,

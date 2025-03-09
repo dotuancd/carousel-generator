@@ -3,10 +3,10 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-} from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
-import { SIZE } from "@/lib/page-size";
-import { cn } from "@/lib/utils";
+} from "./ui/card";
+import { Skeleton } from "./ui/skeleton";
+import { SIZE } from "../lib/page-size";
+import { cn } from "../lib/utils";
 
 function SlideSkeleton({ className }: { className?: string }) {
   return (

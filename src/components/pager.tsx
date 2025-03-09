@@ -1,7 +1,7 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { useFieldArrayValues } from "@/lib/hooks/use-field-array-values";
-import { usePagerContext } from "@/lib/providers/pager-context";
+import { Button } from "./ui/button";
+import { useFieldArrayValues } from "../lib/hooks/use-field-array-values";
+import { usePagerContext } from "../lib/providers/pager-context";
 import {
   ChevronFirst,
   ChevronLast,
