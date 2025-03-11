@@ -20,7 +20,7 @@ export default function Editor({}: {}) {
           isPrinting={isPrinting}
         />
         <div className="flex-1 flex flex-start  md:grid md:grid-cols-[320px_minmax(0,1fr)] ">
-          <SidebarPanel />
+          <SidebarPanel className="min-w-[320px]" />
           <SlidesEditor />
         </div>
       </div>

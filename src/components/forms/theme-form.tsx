@@ -72,7 +72,7 @@ function CustomColors({ form }: { form: DocumentFormReturn }) {
           <FormItem>
             <FormLabel>Primary</FormLabel>
             <FormControl>
-              <Input placeholder="Primary color" className="" {...field} />
+              <Input type="color" placeholder="Primary color" className="" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -85,7 +85,12 @@ function CustomColors({ form }: { form: DocumentFormReturn }) {
           <FormItem>
             <FormLabel>Secondary</FormLabel>
             <FormControl>
-              <Input placeholder="Secondary color" className="" {...field} />
+              <Input
+                type="color"
+                placeholder="Secondary color"
+                className=""
+                {...field}
+              />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -98,7 +103,12 @@ function CustomColors({ form }: { form: DocumentFormReturn }) {
           <FormItem>
             <FormLabel>Background</FormLabel>
             <FormControl>
-              <Input placeholder="Background color" className="" {...field} />
+              <Input
+                type="color"
+                placeholder="Background color"
+                className=""
+                {...field}
+              />
             </FormControl>
             <FormMessage />
           </FormItem>
