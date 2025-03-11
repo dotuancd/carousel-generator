@@ -68,7 +68,10 @@ export function SidebarPanel({ className }: { className?: string }) {
   const { currentSelection } = useSelectionContext();
 
   return (
-    <div className={cn("h-full flex flex-1", className)}>
+    <div
+      className={cn("h-full flex flex-1", className)}
+      style={{ minWidth: "320px" }}
+    >
       <aside className="top-14 z-30 hidden h-full w-full shrink-0 md:sticky md:block border-r">
         <SidebarTabsPanel />
       </aside>
