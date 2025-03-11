@@ -7,9 +7,11 @@ import { ImageSchema } from "../../lib/validation/image-schema";
 export function BackgroundImageLayer({
   image,
   className = "",
+  style,
 }: {
   image: z.infer<typeof ImageSchema>;
   className?: string;
+  style?: React.CSSProperties;
 }) {
   return (
     <div
@@ -17,6 +19,7 @@ export function BackgroundImageLayer({
         "w-full h-full absolute top-0 left-0 right-0 bottom-0",
         className
       )}
+      style={style}
     >
       <img
         alt="background image"

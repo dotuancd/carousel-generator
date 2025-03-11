@@ -75,9 +75,9 @@ export function CommonPage({
 
   return (
     <PageBase size={size} fieldName={backgroundImageField}>
-      <BackgroundLayer background={config.theme.background} className="-z-20" />
+      <BackgroundLayer background={config.theme.background} className="-z-20" style={{zIndex: -20}} />
       {slide.backgroundImage?.source.src ? (
-        <BackgroundImageLayer image={slide.backgroundImage} className="-z-10" />
+        <BackgroundImageLayer image={slide.backgroundImage} className="-z-10" style={{zIndex: -10}} />
       ) : null}
       <PageFrame
         fieldName={backgroundImageField}
