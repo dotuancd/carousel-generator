@@ -28,11 +28,11 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
   return (
     <div
       className={cn(
-        "flex gap-4 md:gap-10 justify-between items-center",
+        "gap-4 md:gap-10 justify-between items-center",
         className
       )}
     >
-      <div className="flex gap-4">
+      {/* <div className="flex gap-4">
         <a href="/" className="items-center space-x-2 flex">
           <Icons.logo />
           <span className="hidden font-bold md:inline-block">
@@ -40,11 +40,12 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
           </span>
         </a>
         <EditorMenubar />
-      </div>
-      <div className="hidden lg:block">
-        <Pager />
-      </div>
-      <div className="flex gap-2 items-center">
+      </div> */}
+      <div className="mt-2 relative">
+        <div className="hidden md:flex flex-col items-center justify-between">
+          <Pager />
+        </div>
+        <div className="absolute right-0 top-0 flex gap-2 items-center">
         <div className="hidden md:block">
           <FilenameForm />
         </div>
@@ -57,8 +58,8 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
             )}
           </div>
         </Button>
-        <StarOnGithub />
-        <a
+        {/* <StarOnGithub /> */}
+        {/* <a
           className="block lg:hidden"
           href={"https://github.com/FranciscoMoretti/carousel-generator"}
           target="_blank"
@@ -75,7 +76,7 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
             <Icons.gitHub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </div>
-        </a>
+        </a> */}
         {/* // TODO: Re-enable your own keys system  */}
         {/* <BringYourKeysDialog
           triggerButton={
@@ -86,6 +87,7 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
             </Button>
           }
         /> */}
+      </div>
       </div>
     </div>
   );
