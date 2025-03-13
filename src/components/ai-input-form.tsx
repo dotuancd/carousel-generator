@@ -21,7 +21,7 @@ import { useState } from "react";
 import { LoadingSpinner } from "./loading-spinner";
 import { useKeysContext } from "../lib/providers/keys-context";
 import { useStatusContext } from "../lib/providers/editor-status-context";
-import { generateCarouselSlidesAction } from "../app/actions";
+import { useGenerateCarousel } from "../lib/providers/generate-carousel-context";
 
 const FormSchema = z.object({
   prompt: z.string().min(2, {
@@ -30,10 +30,10 @@ const FormSchema = z.object({
 });
 
 export function AIInputForm() {
-  const { apiKey } = useKeysContext();
   const { setValue }: DocumentFormReturn = useFormContext(); // retrieve those props
   const [isLoading, setIsLoading] = useState(false);
-  const { status, setStatus } = useStatusContext();
+  const { setStatus } = useStatusContext();
+  const { generateCarousel } = useGenerateCarousel();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -46,9 +46,11 @@ export function AIInputForm() {
     setIsLoading(true);
     setStatus("loading");
 
-    const generatedSlides = await generateCarouselSlidesAction(
-      `A carousel with about "${data.prompt}"`
-    );
+  const generatedSlides = await generateCarousel(data.prompt);
+
+    // const generatedSlides = await generateCarouselSlidesAction(
+    //   `A carousel with about "${data.prompt}"`
+    // );
 
     // const generatedSlides = await generateCarouselSlides(
     //   `A carousel with about "${data.prompt}"`,
