@@ -52,6 +52,22 @@ export const fontsMap: FontMap = {
     className: "font-archivo-black",
     name: "Archivo Black",
   },
+  BigShoulders: {
+    className: "font-big-shoulders",
+    name: "Big Shoulders",
+  },
+  Lato: {
+    className: "font-lato",
+    name: "Lato",
+  },
+  Lora: {
+    className: "font-lora",
+    name: "Lora",
+  },
+  Delius_Swash_Caps: {
+    className: "font-delius-swash-caps",
+    name: "Delius Swash Caps"
+  }
 };
 
 export function fontIdToClassName(fontId: string) {
