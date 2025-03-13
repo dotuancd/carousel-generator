@@ -49,7 +49,7 @@ export function MainNav({ handlePrint, isPrinting, className }: MainNavProps) {
         <div className="hidden md:block">
           <FilenameForm />
         </div>
-        <Button variant="ghost" size={"icon"} onClick={handlePrint}>
+        <Button variant="ghost" size={"icon"} onClick={() => handlePrint()}>
           <div className="flex flex-row gap-1 items-center">
             {isPrinting ? (
               <Loader2Icon className="w-4 h-4 animate-spin" />
