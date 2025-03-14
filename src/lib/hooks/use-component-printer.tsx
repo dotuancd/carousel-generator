@@ -108,7 +108,7 @@ export function useComponentPrinter() {
 
   const [isPrinting, setIsPrinting] = React.useState(false);
   // TODO: Show animation on loading
-  const componentRef = React.useRef(null);
+  const componentRef = React.useRef(null);  
 
   // Packages and references
   // react-to-print: https://github.com/gregnb/react-to-print
@@ -120,9 +120,9 @@ export function useComponentPrinter() {
 
     if (current && typeof current === "object") {
       // @ts-ignore should type narrow more precisely
-      const clone = current.cloneNode(true);
+      const clone = current.cloneNode(true) as HTMLElement;
       // Change from horizontal to vertical for printing and remove gap
-      proxyImgSources(clone);
+      // proxyImgSources(clone);
       removeSelectionStyleById(clone, "page-base-");
       removeSelectionStyleById(clone, "content-image-");
       removePaddingStyleById(clone, "carousel-item-");
@@ -134,6 +134,7 @@ export function useComponentPrinter() {
       insertFonts(clone);
       // Remove styling from container
       clone.className = "flex flex-col";
+      // @ts-ignore should type narrow more precisely
       clone.style = {};
 
       return clone;
@@ -143,9 +144,9 @@ export function useComponentPrinter() {
   }, []);
 
   const handlePrint = useReactToPrint({
-    content: reactToPrintContent,
-    removeAfterPrint: true,
-    onBeforePrint: () => setIsPrinting(true),
+    contentRef: componentRef,
+    preserveAfterPrint: true,
+    onBeforePrint: async () => setIsPrinting(true),
     onAfterPrint: () => setIsPrinting(false),
     pageStyle: `@page { size: ${SIZE.width}px ${SIZE.height}px;  margin: 0; } @media print { body { -webkit-print-color-adjust: exact; }}`,
     print: async (printIframe) => {
@@ -194,7 +195,7 @@ export function useComponentPrinter() {
 
   return {
     componentRef,
-    handlePrint,
+    handlePrint: () => handlePrint(reactToPrintContent),
     isPrinting,
   };
 }
@@ -204,7 +205,8 @@ function proxyImgSources(html: HTMLElement) {
   const images = Array.from(
     html.getElementsByTagName("img")
   ) as HTMLImageElement[];
-  const url = process.env.NEXT_PUBLIC_APP_URL;
+
+  const url = import.meta.env.VITE_SUPABASE_URL;
 
   const externalImages = images.filter(
     (image) => !image.src.startsWith("/") && !image.src.startsWith("data:")
